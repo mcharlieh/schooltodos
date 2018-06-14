@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<title>School To Do's</title>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="w3-bar w3-orange">
+		<a href="#home" class="w3-button w3-bar-item" style="font-weight: bold; font-size: larger">School To Do's</a>
+	</nav>
+	
+	<center>
+		<br><br>
+		<h1 style="font-weight: bold; margin: 0px 0px 0px 25px">Register</h1>
+		<br>
+		<form id="register" style="font-size: larger" action="register.php">
+			First Name: <input type="text" id="fname" name="fname" style="margin: 0px 0px 0px 60px"><br><br>
+			Last Name: <input type="text" id="lname" name="lname" style="margin: 0px 0px 0px 62px"><br><br>
+			School: <input type="text" id="school" name="school" style="margin: 0px 0px 0px 97px"><br><br>
+			Degree/Program: <input type="text" id="degree" name="degree" style="margin: 0px 0px 0px 7px"><br><br>
+			Username: <input type="text" id="user" name="user" style="margin: 0px 0px 0px 66px"><br><br>
+			Password: <input type="password" id="pass" name="pass" style="margin: 0px 0px 0px 72px"><br><br>
+			Security Word: <input type="text" id="secWord" name="secWord" style="margin: 0px 0px 0px 29px"><br>
+			<p style="font-size: small; padding-left: 25">*Provide a security word for password resets</p>
+			Security Number: <input type="text" id="secNum" name="secNum" style="margin: 0px 0px 0px 5px">
+			<p style="font-size: small; padding-left: 25">*Provide a security number for password resets</p>
+			<input type="submit" id="register" name="register" value="Register Now" style="margin: 0px 0px 0px 25px">
+		</form>
+		<br><br>
+		<p style="font-size: small">
+			Already a member?
+			<input type="button" id="signin" name="signin" value="Log In" onClick="window.location.href='index.html'">
+		</p>
+	</center>
+	
+	<!-- Footer -->
+	<footer>
+		<hr />
+		<p style="font-size: xx-small; padding-left: 50px" >&copy; 2018 - Megan Halley (Rasmussen College)</p>
+	</footer>
+</body>
+	
+</html>
