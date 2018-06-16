@@ -21,9 +21,9 @@
 			$q = $conn->query($sqlLogon);
 			$userId = $q->fetchColumn();
 			
-			echo("Login successful!" .$userId);
+			echo("Login successful!");
 			
-			//header('Location: task.html');
+			header('Location: task.html?$userId');
 		}
 		catch (PDOException $f) {
 			echo ("Invalid username or password. If you forgot your password, you can reset it using the button below.");
