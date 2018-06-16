@@ -19,8 +19,8 @@
 		$secWord = (isset($_POST['secWord']) ?$_POST['secWord'] : '');
 		$secNum = (isset($_POST['secNum']) ?$_POST['secNum'] : '');
 	
-		$sqlCreateUser = "insert into tblUSERS (loginName, loginPass, securityWord, securityNum) VALUES ($user, $pass, $secWord, $secNum)";
-		$sqlCreateProfile = "insert into tblPROFILE (usersId, firstName, lastName, schoolName, degreeName) VALUES ($last_id, $fname, $lname, $school, $degree)";
+		$sqlCreateUser = "insert into tblUSERS (loginName, loginPass, securityWord, securityNum) VALUES ('$user', '$pass', '$secWord', '$secNum')";
+		$sqlCreateProfile = "insert into tblPROFILE (usersId, firstName, lastName, schoolName, degreeName) VALUES ('$last_id', '$fname', '$lname', '$school', '$degree')";
 	
 		try {
 			$conn->exec($sqlCreateUser);
