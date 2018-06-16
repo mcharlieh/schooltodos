@@ -18,7 +18,7 @@
 		try {
 			$conn->exec($sqlLogon);
 			echo("Login successful!");
-			header('Location: task.html')
+			header('Location: /task.html')
 		}
 		catch (PDOException $f) {
 			echo ("Invalid username or password. If you forgot your password, you can reset it using the button below.");
