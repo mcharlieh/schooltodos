@@ -27,6 +27,7 @@
 			$last_id = $conn->lastInsertId();
 			$conn->exec($sqlCreateProfile);
 			echo("Registration successful!");
+			header('Location: index.html');
 		}
 		catch (PDOException $f) {
 			echo $sql . "<br>" . $f->getMessage();
