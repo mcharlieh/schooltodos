@@ -13,7 +13,7 @@
 		$user = (isset($_POST['user']) ?$_POST['user'] : '');
 		$pass = (isset($_POST['pass']) ?$_POST['pass'] : '');
 	
-		$sqlLogon = "select id from tblUSERS where loginName=$user and loginPass=$pass";
+		$sqlLogon = "select id from tblUSERS where loginName='$user' and loginPass='$pass'";
 	
 		try {
 			$conn->exec($sqlLogon);
